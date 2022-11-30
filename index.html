@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+      <nav class="navbar navbar-expand-md bg--ebony-clay">
+        <div class="container-md">
+          <a class="navbar-brand text-white" href="#">BrandName</a>
+          <ul class="navbar-nav flex flex-row ms-auto d-md-none">
+            <li class="nav-item">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1483_12)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.1901 15.478L23.6458 21.9337C23.8727 22.1608 24.0001 22.4687 24 22.7897C23.9999 23.1107 23.8723 23.4185 23.6452 23.6455C23.4181 23.8724 23.1102 23.9998 22.7892 23.9997C22.4682 23.9995 22.1604 23.8719 21.9335 23.6448L15.4778 17.1892C13.5479 18.6839 11.1211 19.3873 8.69104 19.1563C6.26097 18.9253 4.01018 17.7772 2.39656 15.9455C0.782936 14.1139 -0.0723147 11.7364 0.00479537 9.29657C0.0819054 6.85677 1.08558 4.53797 2.81165 2.8119C4.53771 1.08584 6.85651 0.082161 9.29632 0.00505095C11.7361 -0.0720591 14.1137 0.783191 15.9453 2.39682C17.7769 4.01044 18.925 6.26123 19.156 8.6913C19.387 11.1214 18.6836 13.5482 17.1889 15.478H17.1901ZM9.60045 16.7992C11.5099 16.7992 13.3412 16.0406 14.6914 14.6904C16.0416 13.3402 16.8001 11.509 16.8001 9.5995C16.8001 7.69003 16.0416 5.85877 14.6914 4.50857C13.3412 3.15837 11.5099 2.39984 9.60045 2.39984C7.69098 2.39984 5.85971 3.15837 4.50951 4.50857C3.15932 5.85877 2.40078 7.69003 2.40078 9.5995C2.40078 11.509 3.15932 13.3402 4.50951 14.6904C5.85971 16.0406 7.69098 16.7992 9.60045 16.7992Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1483_12">
+                    <rect width="24" height="23.9997" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </li>
+            <li class="nav-item ms-3">
+              <svg
+                width="24"
+                height="23"
+                viewBox="0 0 24 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1483_14)">
+                  <path
+                    d="M7.99999 22.4002C8.88365 22.4002 9.59999 21.6838 9.59999 20.8002C9.59999 19.9165 8.88365 19.2002 7.99999 19.2002C7.11634 19.2002 6.39999 19.9165 6.39999 20.8002C6.39999 21.6838 7.11634 22.4002 7.99999 22.4002Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M19.2 22.4002C20.0837 22.4002 20.8 21.6838 20.8 20.8002C20.8 19.9165 20.0837 19.2002 19.2 19.2002C18.3163 19.2002 17.6 19.9165 17.6 20.8002C17.6 21.6838 18.3163 22.4002 19.2 22.4002Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M22.4 4.00016H4.656L4 0.640163C3.9626 0.456742 3.86206 0.292245 3.71589 0.175305C3.56971 0.0583653 3.38716 -0.00361159 3.2 0.000162751H0V1.60016H2.544L5.6 16.9602C5.6374 17.1436 5.73794 17.3081 5.88411 17.425C6.03029 17.542 6.21284 17.6039 6.4 17.6002H20.8V16.0002H7.056L6.4 12.8002H20.8C20.9849 12.8047 21.1657 12.745 21.3116 12.6312C21.4574 12.5174 21.5594 12.3566 21.6 12.1762L23.2 4.97616C23.2268 4.85746 23.2262 4.73421 23.1982 4.61579C23.1702 4.49737 23.1155 4.38689 23.0384 4.29278C22.9612 4.19867 22.8636 4.12339 22.753 4.07268C22.6424 4.02198 22.5217 3.99717 22.4 4.00016ZM20.16 11.2002H6.096L4.976 5.60016H21.4L20.16 11.2002Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1483_14">
+                    <rect width="24" height="22.4002" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </li>
+          </ul>
+          <span
+            class="navbar-toggler mb-lg-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              width="24"
+              height="14"
+              viewBox="0 0 24 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.571472 0H23.4286V2.28571H0.571472V0ZM6.28576 5.71429H23.4286V8H6.28576V5.71429ZM13.4286 11.4286H23.4286V13.7143H13.4286V11.4286Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="background-holder">
+        <div
+          class="container-md d-flex flex-column align-items-center justify-content-evenly"
+        >
+          <h2 class="heading-text w-50 text-white mt-3">
+            We Ensure a best Insurance Service
+          </h2>
+          <p class="w-50 text-center text-white">
+            We know how large objects will act, but things on a small scale just
+            do not act that way.
+          </p>
+          <button
+            class="btn btn-primary bg--picton-blue border-transparent rounded-pill quote my-2"
+          >
+            Get Quote now
+          </button>
+          <button
+            class="btn border--picton-blue c--picton-blue button-text rounded-pill my-3 px-4 py-2"
+          >
+            Learn More
+          </button>
+        </div>
+      </section>
+      <section class="bg--ebony-clay">
+        <div class="container-md row mx-auto py-md-5">
+          <div
+            class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-evenly my-4"
+          >
+            <svg
+              width="72"
+              height="60"
+              viewBox="0 0 72 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M58.9091 29.6471H52.3636V39.5295H42.5455V46.1177H58.9091V29.6471ZM19.6364 19.7647H29.4545V13.1765H13.0909V29.6471H19.6364V19.7647ZM65.4545 0H6.54545C4.80949 0 3.14463 0.694117 1.91712 1.92965C0.689609 3.16519 0 4.84094 0 6.58825V52.706C0 54.4533 0.689609 56.129 1.91712 57.3646C3.14463 58.6001 4.80949 59.2942 6.54545 59.2942H65.4545C67.1905 59.2942 68.8554 58.6001 70.0829 57.3646C71.3104 56.129 72 54.4533 72 52.706V6.58825C72 4.84094 71.3104 3.16519 70.0829 1.92965C68.8554 0.694117 67.1905 0 65.4545 0ZM65.4545 52.706H6.54545V6.58825H65.4545V52.706Z"
+                fill="#23A6F0"
+              />
+            </svg>
+            <p class="fs-5 fw-semibold my-3 text-white">Peace of Mind</p>
+            <p class="w-50 text-center text-white">
+              So it really behaves like neither. Now we have given up.
+            </p>
+          </div>
+          <div
+            class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-evenly my-4"
+          >
+            <svg
+              width="72"
+              height="60"
+              viewBox="0 0 72 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M58.9091 29.6471H52.3636V39.5295H42.5455V46.1177H58.9091V29.6471ZM19.6364 19.7647H29.4545V13.1765H13.0909V29.6471H19.6364V19.7647ZM65.4545 0H6.54545C4.80949 0 3.14463 0.694117 1.91712 1.92965C0.689609 3.16519 0 4.84094 0 6.58825V52.706C0 54.4533 0.689609 56.129 1.91712 57.3646C3.14463 58.6001 4.80949 59.2942 6.54545 59.2942H65.4545C67.1905 59.2942 68.8554 58.6001 70.0829 57.3646C71.3104 56.129 72 54.4533 72 52.706V6.58825C72 4.84094 71.3104 3.16519 70.0829 1.92965C68.8554 0.694117 67.1905 0 65.4545 0ZM65.4545 52.706H6.54545V6.58825H65.4545V52.706Z"
+                fill="#23A6F0"
+              />
+            </svg>
+            <p class="fs-5 fw-semibold my-3 text-white">Set for Life</p>
+            <p class="w-50 text-center text-white">
+              They were used to create the machines that launched.
+            </p>
+          </div>
+          <div
+            class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-evenly my-4"
+          >
+            <svg
+              width="72"
+              height="60"
+              viewBox="0 0 72 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M58.9091 29.6471H52.3636V39.5295H42.5455V46.1177H58.9091V29.6471ZM19.6364 19.7647H29.4545V13.1765H13.0909V29.6471H19.6364V19.7647ZM65.4545 0H6.54545C4.80949 0 3.14463 0.694117 1.91712 1.92965C0.689609 3.16519 0 4.84094 0 6.58825V52.706C0 54.4533 0.689609 56.129 1.91712 57.3646C3.14463 58.6001 4.80949 59.2942 6.54545 59.2942H65.4545C67.1905 59.2942 68.8554 58.6001 70.0829 57.3646C71.3104 56.129 72 54.4533 72 52.706V6.58825C72 4.84094 71.3104 3.16519 70.0829 1.92965C68.8554 0.694117 67.1905 0 65.4545 0ZM65.4545 52.706H6.54545V6.58825H65.4545V52.706Z"
+                fill="#23A6F0"
+              />
+            </svg>
+            <p class="fs-5 fw-semibold my-3 text-white">100% Satisfaction</p>
+            <p class="w-50 text-center text-white">
+              So it really behaves like neither. Now we have given up.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="bg--jordy-blue py-5">
+        <div class="container-md">
+          <h2
+            class="fs2 w-75 text-center mx-auto text-white fw-semibold heading-text"
+          >
+            What Clients Say
+          </h2>
+          <p class="w-75 text-center text-white mx-auto">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics.
+          </p>
+          <ul
+            class="d-flex flex-column flex-md-row gap-md-5 align-items-center justify-content-evenly"
+          >
+            <li
+              class="d-flex flex-column align-items-start justify-content-evenly bg-white w-75 p-4 my-4"
+            >
+              <p class="major-text c--ebony-clay fs-2 my-0">Regina Miles</p>
+              <p class="sidetext mb-2 c--dove-gray">Designer</p>
+              <span
+                class="d-flex flex-row align-items-center justify-content-start my-3"
+              >
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+              </span>
+              <p class="client-comment c--dove-gray">
+                This proved to be impossible using the traditional concepts of
+                space and time. Einstein developed a new view of time first and
+                then space. This proved to be impossible using the traditional
+                concepts of space and time. Einstein developed a new view of
+                time first and then space.
+              </p>
+            </li>
+            <li
+              class="d-flex flex-column align-items-start justify-content-evenly bg-white w-75 p-4 my-4"
+            >
+              <p class="major-text c--ebony-clay fs-2 my-0">Regina Miles</p>
+              <p class="sidetext mb-2 c--dove-gray">Designer</p>
+              <span
+                class="d-flex flex-row align-items-center justify-content-start my-3"
+              >
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+              </span>
+              <p class="client-comment c--dove-gray">
+                This proved to be impossible using the traditional concepts of
+                space and time. Einstein developed a new view of time first and
+                then space. This proved to be impossible using the traditional
+                concepts of space and time. Einstein developed a new view of
+                time first and then space.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="bg--ebony-clay">
+        <div class="container-fluid py-5">
+          <h2 class="text-center text-white w-75 mx-auto heading-text">
+            We Are Optimists Who Love To Work Together
+          </h2>
+          <p class="text-center text-white w-75 mx-auto my-3">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+          <ul class="row gap-5 gap-md-0">
+            <li
+              class="col-10 mx-auto mx-md-0 col-md-3 gallery justify-content-center position-relative"
+            >
+              <img src="assets/images/post1.png" alt="" />
+              <div class="gallery__content">
+                <p class="text-white sidetext">Tax Management</p>
+                <h3 class="text-white major-text text-break w-75">
+                  Life Tips From Top Ten Adventure Travelers
+                </h3>
+                <button
+                  class="btn btn-primary bg--picton-blue border-transparent rounded-pill dark-button-text gallery__content__button px-4 py-2"
+                >
+                  View Project
+                </button>
+              </div>
+            </li>
+            <li
+              class="col-10 mx-auto mx-md-0 col-md-3 gallery justify-content-center position-relative"
+            >
+              <img src="assets/images/post2.png" alt="" />
+              <div class="gallery__content">
+                <p class="text-white sidetext">Tax Management</p>
+                <h3 class="text-white major-text text-break w-75">
+                  Life Tips From Top Ten Adventure Travelers
+                </h3>
+                <button
+                  class="btn btn-primary bg--picton-blue border-transparent rounded-pill dark-button-text gallery__content__button px-4 py-2"
+                >
+                  View Project
+                </button>
+              </div>
+            </li>
+            <li
+              class="col-10 mx-auto mx-md-0 col-md-3 gallery justify-content-center position-relative"
+            >
+              <img src="assets/images/post3.png" alt="" />
+              <div class="gallery__content">
+                <p class="text-white sidetext">Tax Management</p>
+                <h3 class="text-white major-text text-break w-75">
+                  Life Tips From Top Ten Adventure Travelers
+                </h3>
+                <button
+                  class="btn btn-primary bg--picton-blue border-transparent rounded-pill dark-button-text gallery__content__button px-4 py-2"
+                >
+                  View Project
+                </button>
+              </div>
+            </li>
+            <li
+              class="col-10 mx-auto mx-md-0 col-md-3 gallery justify-content-center position-relative"
+            >
+              <img src="assets/images/post4.png" alt="" />
+              <div class="gallery__content">
+                <p class="text-white sidetext">Tax Management</p>
+                <h3 class="text-white major-text text-break w-75">
+                  Life Tips From Top Ten Adventure Travelers
+                </h3>
+                <button
+                  class="btn btn-primary bg--picton-blue border-transparent rounded-pill dark-button-text gallery__content__button px-4 py-2"
+                >
+                  View Project
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="container-md mx-auto pb-5">
+          <h2
+            class="fs2 w-75 text-center mx-auto mt-5 text-white fw-semibold heading-text"
+          >
+            Pricing
+          </h2>
+          <p class="w-75 text-center text-white mx-auto">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics.
+          </p>
+          <ul class="row gap-5 gap-md-3 mt-5 justify-content-center">
+            <li
+              class="col-12 col-md-4 price-card bg-white py-5 px-2 d-flex flex-column align-items-center justify-content-center"
+            >
+              <h2 class="major-text text-center c--ebony-clay">FREE</h2>
+              <p
+                class="w-75 mx-auto text-center c--dove-gray price-card__subtext"
+              >
+                Organize across all apps by hand
+              </p>
+              <h2
+                class="price-card__main-price c--picton-blue text-center mb-0"
+              >
+                0$
+              </h2>
+              <p class="c--picton-blue text-center my-0">Per Month</p>
+              <ul class="price-card__list my-5 mx-auto order-md-4">
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--jungle-green"
+                  ></span>
+                  <p class="sidetext mt-1">Unlimited Product Updates</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--jungle-green"
+                  ></span>
+                  <p class="sidetext mt-1">Unlimited Product Updates</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--jungle-green"
+                  ></span>
+                  <p class="sidetext mt-1">Unlimited Product Updates</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--silver"
+                  ></span>
+                  <p class="sidetext mt-1">1GB Cloud Storage Services</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--silver"
+                  ></span>
+                  <p class="sidetext mt-1">Email & Communities Help</p>
+                </li>
+              </ul>
+              <button
+                class="btn bg--picton-blue text-white button-text w-75 px-5 py-3 mx-auto mt-md-5"
+              >
+                Try for free
+              </button>
+            </li>
+            <li
+              class="col-12 col-md-4 price-card bg-white py-5 px-2 d-flex flex-column align-items-center justify-content-center"
+            >
+              <h2 class="major-text text-center c--ebony-clay">SILVER</h2>
+              <p
+                class="w-75 mx-auto text-center c--dove-gray price-card__subtext"
+              >
+                Organize across all apps by hand
+              </p>
+              <h2
+                class="price-card__main-price c--picton-blue text-center mb-0"
+              >
+                9.99$
+              </h2>
+              <p class="c--picton-blue text-center my-0">Per Month</p>
+              <ul class="price-card__list my-5 mx-auto order-md-4">
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--jungle-green"
+                  ></span>
+                  <p class="sidetext mt-1">Unlimited Product Updates</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--jungle-green"
+                  ></span>
+                  <p class="sidetext mt-1">Unlimited Product Updates</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--jungle-green"
+                  ></span>
+                  <p class="sidetext mt-1">Unlimited Product Updates</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--silver"
+                  ></span>
+                  <p class="sidetext mt-1">1GB Cloud Storage Services</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--silver"
+                  ></span>
+                  <p class="sidetext mt-1">Email & Communities Help</p>
+                </li>
+              </ul>
+              <button
+                class="btn bg--picton-blue text-white button-text w-75 px-5 py-3 mx-auto mt-md-5"
+              >
+                Try for free
+              </button>
+            </li>
+            <li
+              class="col-12 col-md-4 price-card bg-white py-5 px-2 d-flex flex-column align-items-center justify-content-center"
+            >
+              <h2 class="major-text text-center c--ebony-clay">GOLD</h2>
+              <p
+                class="w-75 mx-auto text-center c--dove-gray price-card__subtext"
+              >
+                Organize across all apps by hand
+              </p>
+              <h2
+                class="price-card__main-price c--picton-blue text-center mb-0"
+              >
+                19.99$
+              </h2>
+              <p class="c--picton-blue text-center my-0">Per Month</p>
+              <ul class="price-card__list my-5 mx-auto order-md-4">
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--jungle-green"
+                  ></span>
+                  <p class="sidetext mt-1">Unlimited Product Updates</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--jungle-green"
+                  ></span>
+                  <p class="sidetext mt-1">Unlimited Product Updates</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--jungle-green"
+                  ></span>
+                  <p class="sidetext mt-1">Unlimited Product Updates</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--silver"
+                  ></span>
+                  <p class="sidetext mt-1">1GB Cloud Storage Services</p>
+                </li>
+                <li
+                  class="price-card__list__list-item d-flex flex-row justify-content-center gap-2"
+                >
+                  <span
+                    class="price-card__list__list-item__tick bg--silver"
+                  ></span>
+                  <p class="sidetext mt-1">Email & Communities Help</p>
+                </li>
+              </ul>
+              <button
+                class="btn bg--picton-blue text-white button-text w-75 px-5 py-3 mx-auto mt-md-5"
+              >
+                Try for free
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="appointment">
+        <div class="container-md row mx-auto px-md-5">
+          <form class="col-10 mt-5 mx-auto col-md-8 mx-md-0">
+            <p class="price-card__subtext text-start mt-5 mb-0 c--ebony-clay">
+              Contact Us
+            </p>
+            <h3 class="price-card__main-price mb-5 c--ebony-clay">
+              Make an Appointment
+            </h3>
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="col-12 col-md-5 p-2 mb-2"
+            />
+            <input
+              type="text"
+              placeholder="example@gmail.com"
+              class="col-12 col-md-5 p-2 mb-2"
+            />
+            <select class="col-12 col-md-5 p-2 mb-2 c--silver bg--white">
+              <option>Please Select</option>
+            </select>
+            <select class="col-12 col-md-5 p-2 mb-2 c--silver bg--white">
+              <option>4:00 Available</option>
+            </select>
+            <textarea
+              class="col-12 col-md-10 p-2"
+              placeholder="Message"
+            ></textarea>
+            <button
+              class="btn btn-primary bg--picton-blue border--transparent col-12 col-md-4 mb-5"
+            >
+              Book Appointment
+            </button>
+          </form>
+        </div>
+      </section>
+      <section>
+        <div
+          class="container-md py-5 px-5 d-flex flex-column flex-md-row align-items-md-center justify-content-between"
+        >
+          <div class="">
+            <h3 class="c--ebony-clay major-text text-start">
+              Consulting Agency For Your Business
+            </h3>
+            <p class="c--ebony-clay smallest-text text-start">
+              The quick fox jumps over the lazy dog.
+            </p>
+          </div>
+          <button
+            class="btn btn-primary bg--picton-blue border--transparent button-text px-3 py-2"
+          >
+            Contact Us
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center text-lg-start bg--ebony-clay text-white pt-5">
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container-md mx-auto text-center text-md-start mt-5 px-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-12 col-md-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-start fw-bold mb-4">Company Info</h6>
+              <p class="text-start">
+                <a href="#!">About Us</a>
+              </p>
+              <p class="text-start">
+                <a href="#!">Carrier</a>
+              </p>
+              <p class="text-start">
+                <a href="#!">We are hiring</a>
+              </p>
+              <p class="text-start">
+                <a href="#!">Blog</a>
+              </p>
+            </div>
+            <div class="col-12 col-md-3 mx-auto mb-4">
+              <h6 class="text-start fw-bold mb-4">Features</h6>
+              <p class="text-start">
+                <a href="#!">Business Marketing</a>
+              </p>
+              <p class="text-start">
+                <a href="#!">User Analytic</a>
+              </p>
+              <p class="text-start">
+                <a href="#!">Live Chat</a>
+              </p>
+              <p class="text-start">
+                <a href="#!">Customer Support</a>
+              </p>
+            </div>
+            <div class="col-12 col-md-3 mx-auto mb-4">
+              <h6 class="text-start fw-bold mb-4">Resources</h6>
+              <p class="text-start">
+                <a href="#!">IOS and Android</a>
+              </p>
+              <p class="text-start">
+                <a href="#!">Watch a demo</a>
+              </p>
+              <p class="text-start">
+                <a href="#!">Customers</a>
+              </p>
+              <p class="text-start">
+                <a href="#!">API</a>
+              </p>
+            </div>
+            <div class="col-12 col-md-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-start fw-bold mb-4">Get In Touch</h6>
+              <p class="text-start">
+                <i class="fas fa-phone me-1"></i>(480) 555-0103
+              </p>
+              <p class="text-start">
+                <i class="fas fa-envelope me-1"></i>
+                info@example.com
+              </p>
+              <p class="text-start">
+                <i class="fas fa-home me-1"></i> New York, US
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center p-4 p-md-5 bg-white">
+        <div class="container-md row mx-auto">
+          <p class="text-start c--dove-gray col-12 col-md-6">
+            Made With Love By Figmaland All Right Reserved.
+          </p>
+          <span class="col-md-3"></span>
+          <span class="col-12 col-md-3 text-start text-md-end">
+            <i class="fa-brands fa-facebook fa-2x me-2 c--dodger-blue"></i>
+            <i class="fa-brands fa-instagram fa-2x me-2 c--amaranth"></i>
+            <i class="fa-brands fa-twitter fa-2x c--picton-blue me-2"></i>
+            <i class="fa-brands fa-youtube fa-2x c--trinidad d-md-none"></i>
+          </span>
+        </div>
+      </section>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="assets/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
